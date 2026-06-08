@@ -1,0 +1,52 @@
+version: '3.8'
+
+networks:
+  housing-network:
+    driver: bridge
+
+services:
+  housing-price-model:
+    build: ./housing-price-model
+    ports:
+      - "8000:8000"
+    networks:
+      - housing-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend-python:
+    build: ./backend-python
+    ports:
+      - "8001:8001"
+    networks:
+      - housing-network
+    depends_on:
+      housing-price-model:
+        condition: service_healthy
+    environment:
+      - MODEL_API_URL=http://housing-price-model:8000
+
+  backend-java:
+    build: ./backend-java
+    ports:
+      - "8080:8080"
+    networks:
+      - housing-network
+    depends_on:
+      housing-price-model:
+        condition: service_healthy
+    environment:
+      - MODEL_API_URL=http://housing-price-model:8000
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - housing-network
+    depends_on:
+      - backend-python
+      - backend-java

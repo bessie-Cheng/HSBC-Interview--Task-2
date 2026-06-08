@@ -1,0 +1,44 @@
+# 前端 Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+frontend/.env*
+frontend/*.log
+
+# Python 后端
+backend-python/venv/
+backend-python/__pycache__/
+backend-python/.pytest_cache/
+backend-python/.coverage
+backend-python/*.pyc
+backend-python/.env*
+backend-python/*.log
+
+# 模型 Python 项目（如果其中也有 venv）
+housing-price-model/venv/
+housing-price-model/__pycache__/
+housing-price-model/*.pkl      # 模型文件较大，建议不上传（除非很小）
+housing-price-model/.env*
+
+# Java 后端
+backend-java/target/
+backend-java/.mvn/
+backend-java/mvnw
+backend-java/mvnw.cmd
+backend-java/.idea/
+backend-java/*.log
+backend-java/.DS_Store
+
+# 通用
+.DS_Store
+*.log
+.idea/
+.vscode/
+*.swp
+.envnode_modules/
+target/
+__pycache__/
+*.pyc
+.DS_Store
