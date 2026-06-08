@@ -63,10 +63,5 @@ Python 后端 API 文档：http://localhost:8001/docs
 
 模型容器 API 文档：http://localhost:8000/docs
 
-<img width="1429" height="774" alt="Screenshot 2026-06-09 at 01 07 11" src="https://github.com/user-attachments/assets/5ac33046-57e1-40d3-8a80-03e8c1c6f333" />
+<img width="1429" height="774" alt="Screenshot 2026-06-09 at 01 07 11" src="https://github.com/user-attachments/assets/9010ff59-17f1-4052-a216-9ace7bc23f36" />
 
-<img width="1409" height="772" alt="Screenshot 2026-06-09 at 01 07 20" src="https://github.com/user-attachments/assets/8a8e075c-cc29-4612-8682-8074af90c5cc" />
-
-<img width="1372" height="755" alt="Screenshot 2026-06-09 at 01 26 53" src="https://github.com/user-attachments/assets/5b21590a-82b0-45d2-8fbd-3a529a5aab63" />
-
-<img width="1245" height="745" alt="Screenshot 2026-06-09 at 01 27 10" src="https://github.com/user-attachments/assets/2330095c-6ae4-42e1-87f0-52c69b1f2483" />
